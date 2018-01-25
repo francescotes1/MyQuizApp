@@ -1,0 +1,29 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<string name="app_name">MyQuiz</string>
+    <string name="reset">Reset</string>
+    <string name="reset_success">Quiz answers erased!</string>
+    <string name="submit">Submit</string>
+    <string name="answer">Answer</string>
+    <string name="q1">Question 1</string>
+    <string name="q2">Question 2</string>
+    <string name="q3">Question 3</string>
+    <string name="q4">Question 4</string>
+    <string name="question1">New French president in 2017?</string>
+    <string name="question1answer1">Sarkozy</string>
+    <string name="question1answer2">Macron</string>
+    <string name="question1answer3">Salvator Dalì</string>
+    <string name="question2">Beginning year of WW2?</string>
+    <string name="question2answer1">1939</string>
+    <string name="question2answer2">1938</string>
+    <string name="question2answer3">1945</string>
+    <string name="question3">Was defeated in Waterloo</string>
+    <string name="q3RightAnswer">napoleon</string>
+    <string name="question4">Italian Cities?</string>
+    <string name="question4answer1">Sofia</string>
+    <string name="question4answer2">Pavia</string>
+    <string name="question4answer3">Rome</string>
+    <string name="success">Well done!</string>
+    <string name="failure">Something is wrong.. please check</string>
+    <string name="results">Points: <xliff:g id="points" example="0">%i</xliff:g> of <xliff:g id="max_points" example="4">%i</xliff:g></string>
+</resources>

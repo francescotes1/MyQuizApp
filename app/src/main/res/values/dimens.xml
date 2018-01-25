@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="questionNumber_fontSize">22sp</dimen>
+    <dimen name="question_fontSize">16sp</dimen>
+    <dimen name="question_padding_horizontal">5dp</dimen>
+    <dimen name="question_padding_vertical">10dp</dimen>
+    <dimen name="question_margin">10dp</dimen>
+</resources>

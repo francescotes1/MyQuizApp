@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.android.myquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/reset"
+            android:onClick="resetQuiz"
+            android:text="@string/reset" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="submitQuiz"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/question_margin"
+                android:background="@color/question"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/question_padding_vertical"
+                android:paddingBottom="@dimen/question_padding_vertical"
+                android:paddingLeft="@dimen/question_padding_horizontal"
+                android:paddingRight="@dimen/question_padding_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@string/q1'
+                    android:textSize="@dimen/questionNumber_fontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1"
+                    android:textSize="@dimen/question_fontSize" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/q1a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1answer1" />
+
+                    <RadioButton
+                        android:id="@+id/q1a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1answer2" />
+
+                    <RadioButton
+                        android:id="@+id/q1a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1answer3" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/question_margin"
+                android:layout_marginTop="@dimen/question_margin"
+                android:background="@color/question"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/question_padding_vertical"
+                android:paddingBottom="@dimen/question_padding_vertical"
+                android:paddingLeft="@dimen/question_padding_horizontal"
+                android:paddingRight="@dimen/question_padding_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@string/q2'
+                    android:textSize="@dimen/questionNumber_fontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question2"
+                    android:textSize="@dimen/question_fontSize" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/q2a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2answer1" />
+
+                    <RadioButton
+                        android:id="@+id/q2a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2answer2" />
+
+                    <RadioButton
+                        android:id="@+id/q2a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2answer3" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/question_margin"
+                android:layout_marginTop="@dimen/question_margin"
+                android:background="@color/question"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/question_padding_vertical"
+                android:paddingBottom="@dimen/question_padding_vertical"
+                android:paddingLeft="@dimen/question_padding_horizontal"
+                android:paddingRight="@dimen/question_padding_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@string/q3'
+                    android:textSize="@dimen/questionNumber_fontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3"
+                    android:textSize="@dimen/question_fontSize" />
+
+                <EditText
+                    android:id="@+id/q3a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/answer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/question_margin"
+                android:layout_marginTop="@dimen/question_margin"
+                android:background="@color/question"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/question_padding_vertical"
+                android:paddingBottom="@dimen/question_padding_vertical"
+                android:paddingLeft="@dimen/question_padding_horizontal"
+                android:paddingRight="@dimen/question_padding_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@string/q4'
+                    android:textSize="@dimen/questionNumber_fontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4"
+                    android:textSize="@dimen/question_fontSize" />
+
+                <CheckBox
+                    android:id="@+id/q4a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4answer1" />
+
+                <CheckBox
+                    android:id="@+id/q4a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4answer2" />
+
+                <CheckBox
+                    android:id="@+id/q4a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4answer3" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

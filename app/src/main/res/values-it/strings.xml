@@ -1,0 +1,28 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MyQuiz</string>
+    <string name="reset">Resetta</string>
+    <string name="submit">Invia</string>
+    <string name="answer">Risposta</string>
+    <string name="question1">Il nuovo presidente francese nel 2017?</string>
+    <string name="question1answer1">Sarkozy</string>
+    <string name="question1answer2">Macron</string>
+    <string name="question1answer3">Salvator Dalì</string>
+    <string name="question2">Anno d\'inizio della 2° guerra mondiale</string>
+    <string name="question2answer1">1939</string>
+    <string name="question2answer2">1938</string>
+    <string name="question2answer3">1945</string>
+    <string name="question3">Fu sconfitto a Waterloo</string>
+    <string name="q3RightAnswer">napoleone</string>
+    <string name="question4">Città italiane?</string>
+    <string name="question4answer1">Sofia</string>
+    <string name="question4answer2">Pavia</string>
+    <string name="question4answer3">Roma</string>
+    <string name="success">Ben fatto!</string>
+    <string name="failure">Qualcosa non va.. verifica le risposte!</string>
+    <string name="results">Punti: <xliff:g id="points" example="0">%s</xliff:g> di <xliff:g id="max_points" example="4">%s</xliff:g></string>
+    <string name="q1">Domanda 1</string>
+    <string name="q2">Domanda 2</string>
+    <string name="q3">Domanda 3</string>
+    <string name="q4">Domanda 4</string>
+    <string name="reset_success">Risposte cancellate!</string>
+</resources>
