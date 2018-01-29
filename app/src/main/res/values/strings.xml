@@ -1,6 +1,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<string name="app_name">MyQuiz</string>
+    <string name="app_name">MyQuiz</string>
     <string name="reset">Reset</string>
     <string name="reset_success">Quiz answers erased!</string>
     <string name="submit">Submit</string>
@@ -24,6 +24,10 @@
     <string name="question4answer2">Pavia</string>
     <string name="question4answer3">Rome</string>
     <string name="success">Well done!</string>
-    <string name="failure">Something is wrong.. please check</string>
-    <string name="results">Points: <xliff:g id="points" example="0">%i</xliff:g> of <xliff:g id="max_points" example="4">%i</xliff:g></string>
+    <string name="failure">Not quite accurate ;)</string>
+    <string name="results">Points: <xliff:g example="0" id="points">%d</xliff:g> out of <xliff:g example="4" id="max_points">%d</xliff:g></string>
+    <string name="share">Share</string>
+    <string name="finalMessage">Thank you for completing this Quiz.\n\nShare your results with friends! <xliff:g example="0" id="result">%s</xliff:g></string>
+    <string name="shareMessage">I completed the MyQuiz app quiz and got <xliff:g example="0" id="result">%s</xliff:g> out of <xliff:g example="4" id="max_points">%d</xliff:g> points! Challenge me if you dare ;) </string>
+    <string name="doItAgain">Let\'s do it again!</string>
 </resources>

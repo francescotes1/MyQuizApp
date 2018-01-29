@@ -5,4 +5,6 @@
     <dimen name="question_padding_horizontal">5dp</dimen>
     <dimen name="question_padding_vertical">10dp</dimen>
     <dimen name="question_margin">10dp</dimen>
+    <dimen name="shareButtonsMarginTop">10dp</dimen>
+    <dimen name="shareButtonsPadding">5dp</dimen>
 </resources>

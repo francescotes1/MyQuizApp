@@ -1,6 +1,7 @@
 package com.example.android.myquiz;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,7 +15,6 @@ import android.widget.Toast;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-
     boolean[] q1RightAnswer = {false, true, false};
     boolean[] q2RightAnswer = {true, false, false};
     String q3RightAnswer;
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     CheckBox q4a1;
     CheckBox q4a2;
     CheckBox q4a3;
+    public static final String EXTRA_MESSAGE = "com.example.MyQuiz.MESSAGE";
+    int points;
 
 
     @Override
@@ -62,8 +64,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             additionalMsg = "\n" + getString(R.string.failure);
         }
-        displayToastMessage(getString(R.string.results, ((a1 ? 1 : 0) + (a2 ? 1 : 0) + (a3 ? 1 : 0) + (a4 ? 1 : 0)), 4) + additionalMsg);
+        points = ((a1 ? 1 : 0) + (a2 ? 1 : 0) + (a3 ? 1 : 0) + (a4 ? 1 : 0));
+        displayToastMessage(getString(R.string.results,points , 4) + additionalMsg);
 
+        openShareActivity(points);
     }
 
     public void displayToastMessage(String textMessage) {
@@ -91,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetQuiz(View view) {
+        points = 0;
         q1a1.setChecked(false);
         q1a2.setChecked(false);
         q1a3.setChecked(false);
@@ -103,4 +108,12 @@ public class MainActivity extends AppCompatActivity {
         q4a3.setChecked(false);
         displayToastMessage(getString(R.string.reset_success));
     }
+
+    public void openShareActivity(int points) {
+        Intent intent = new Intent(this, ShareActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, points);
+        startActivity(intent);
+    }
+
+
 }

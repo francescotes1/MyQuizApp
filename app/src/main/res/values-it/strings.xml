@@ -18,11 +18,15 @@
     <string name="question4answer2">Pavia</string>
     <string name="question4answer3">Roma</string>
     <string name="success">Ben fatto!</string>
-    <string name="failure">Qualcosa non va.. verifica le risposte!</string>
-    <string name="results">Punti: <xliff:g id="points" example="0">%s</xliff:g> di <xliff:g id="max_points" example="4">%s</xliff:g></string>
+    <string name="failure">Non del tutto esatto ;)</string>
+    <string name="results">Punti: <xliff:g id="points" example="0">%s</xliff:g> su <xliff:g id="max_points" example="4">%s</xliff:g></string>
     <string name="q1">Domanda 1</string>
     <string name="q2">Domanda 2</string>
     <string name="q3">Domanda 3</string>
     <string name="q4">Domanda 4</string>
     <string name="reset_success">Risposte cancellate!</string>
+    <string name="share">Condividi</string>
+    <string name="finalMessage">Grazie per aver completato il Quiz.\n\nCondividi i tuoi risultati con gli amici!  <xliff:g example="0" id="result">%s</xliff:g></string>
+    <string name="shareMessage">Ho completato il quiz dell\'app MyQuiz e ho ottenuto <xliff:g example="0" id="result">%s</xliff:g> punti su <xliff:g example="4" id="max_points">%d</xliff:g>! Vediamo se osi sfidarmi ;) </string>
+    <string name="doItAgain">Rifai il quiz!</string>
 </resources>
